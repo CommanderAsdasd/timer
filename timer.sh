@@ -62,3 +62,4 @@ countdown $DURATION
 echo -e '\n\aTimer finished.'
 
 which notify-send >/dev/null && notify-send "Timer [$*] is finished at $(date)."
+zenity --error --text 'time to stop' --display=:0.0
